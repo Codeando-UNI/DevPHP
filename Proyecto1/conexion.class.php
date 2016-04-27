@@ -10,8 +10,8 @@ class conexion {
         
         // Configuracion DigitalOcean WAPOSAT
         
-       $this->_conexion = mysqli_connect("localhost", "root", "jibf123") or die('No pudo conectarse: ' . mysql_error());
-	   $this->_base_datos = mysqli_select_db($this->_conexion, "Desarrollo");
+       $this->_conexion = mysqli_connect("localhost", "root", "mecatronica2015") or die('No pudo conectarse: ' . mysql_error());
+	   $this->_base_datos = mysqli_select_db($this->_conexion, "desarrollo");
         
 	}
 	public function ejecutar_sentencia ($sql) {
